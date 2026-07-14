@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoppiemaker – AI Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0d0d0d; color: #fff; }
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e94560;
+    }
+    header h1 { font-size: 1.8rem; color: #e94560; letter-spacing: 2px; }
+    header p { font-size: 0.9rem; color: #aaa; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #e94560; }
+    .hero {
+      background: linear-gradient(135deg, #0f3460, #e94560);
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.1rem; color: #eee; margin-bottom: 30px; }
+    .hero a {
+      background: #fff;
+      color: #e94560;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: transform 0.2s;
+    }
+    .hero a:hover { transform: scale(1.05); }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #1a1a2e;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e94560;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(233,69,96,0.3); }
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #0f3460, #533483);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .card-body { padding: 20px; }
+    .card-body h3 { font-size: 1.1rem; margin-bottom: 8px; color: #e94560; }
+    .card-body p { font-size: 0.85rem; color: #aaa; margin-bottom: 14px; line-height: 1.5; }
+    .card-body .price { font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 14px; }
+    .btn {
+      display: inline-block;
+      background: #e94560;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+      text-align: center;
+    }
+    .btn:hover { background: #c73652; }
+    .section-title {
+      text-align: center;
+      padding: 40px 20px 0;
+      font-size: 2rem;
+      color: #e94560;
+    }
+    footer {
+      background: #1a1a2e;
+      text-align: center;
+      padding: 30px;
+      color: #555;
+      font-size: 0.85rem;
+      border-top: 1px solid #e94560;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>&#x1F6D2; Shoppiemaker</h1>
+      <p>AI-powered Digital Products</p>
+    </div>
+    <nav>
+      <a href="#products">Produkte</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Dein AI Digital Shop</h2>
+    <p>Exklusive AI-generierte Inhalte, Tools & digitale Produkte</p>
+    <a href="#products">Jetzt entdecken</a>
+  </section>
+
+  <h2 class="section-title" id="products">&#x2728; Unsere Produkte</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="card-img">&#x1F916;</div>
+      <div class="card-body">
+        <h3>AI Prompt Pack – Anime</h3>
+        <p>100+ fertige Prompts fuer Anime & Dragon Ball Charaktere fuer Sora, Kling & mehr.</p>
+        <div class="price">9,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">&#x1F3A5;</div>
+      <div class="card-body">
+        <h3>AI Video Template Pack</h3>
+        <p>Fertige CapCut-Vorlagen fuer virale TikTok & YouTube AI-Videos. Sofort einsatzbereit.</p>
+        <div class="price">14,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">&#x1F3A8;</div>
+      <div class="card-body">
+        <h3>AI Avatar Creator Guide</h3>
+        <p>Schritt-fuer-Schritt Anleitung: Erstelle deinen eigenen AI-Avatar fuer Social Media.</p>
+        <div class="price">7,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">&#x1F3B5;</div>
+      <div class="card-body">
+        <h3>AI Music Production Bundle</h3>
+        <p>AI-generierte Beats, Songstrukturen & Prompts fuer deine Musikproduktion.</p>
+        <div class="price">19,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">&#x1F4F1;</div>
+      <div class="card-body">
+        <h3>TikTok Shop Masterclass</h3>
+        <p>Lerne wie du mit TikTok Shop & AI-Content passives Einkommen generierst.</p>
+        <div class="price">24,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">&#x1F3E0;</div>
+      <div class="card-body">
+        <h3>AI Immobilien Visualisierung</h3>
+        <p>Professionelle 3D-Renderings deiner Grundrisse & Gebaeude mit AI – fuer Makler.</p>
+        <div class="price">49,99 &euro;</div>
+        <a class="btn" href="#contact">Jetzt kaufen</a>
+      </div>
+    </div>
+
+  </div>
+
+  <section id="contact" style="text-align:center; padding: 60px 20px;">
+    <h2 style="color:#e94560; margin-bottom:20px;">&#x1F4E9; Kontakt</h2>
+    <p style="color:#aaa; margin-bottom:30px;">Interesse an einem Produkt? Schreib uns auf TikTok oder per E-Mail.</p>
+    <a class="btn" style="max-width:300px; margin:auto; display:block;" href="https://www.tiktok.com" target="_blank">TikTok kontaktieren</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Shoppiemaker by jet306031-art &ndash; All rights reserved</p>
+  </footer>
+
+</body>
+</html>
